@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #777;
+    font-family: font1;
+}
+@font-face {
+    font-family: "font1";
+    src: url('Montserrat-Light.TTF') format('truetype');
+}
+.clear {
+    clear: both;
+}
+h1 {
+    color: #424eb0;
+}
+h2 {
+    color: #424eb0;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+p {
+    font-size: 0.7em;
+}
+header {
+    width: 100%;
+    margin: 0 auto;
+    height: 4em;
+    position: relative;
+}
+.logo {
+    color: #63677C;
+    line-height: 4em;
+    margin-left: 2em;
+    display: inline-block;
+}
+.gnb_btn {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    cursor: pointer;
+}
+.gnb_btn .fas {
+    font-size: 2em;
+    color: #424eb0;
+}
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+nav {
+    display: none;
+    background: #424eb0;
+}
+nav ul li {
+    padding: 2em;
+}
+nav ul li:hover{
+    background: #424eb0;
+    border-radius: 3px;
+    transition: all 1s;
+}
+nav ul li:hover a{
+    color: #fff;
+}
+nav ul li a {
+    color: #fff;
+    font-size: 0.8em;
+}
+.mainimg img {
+    width: 100%;
+}
+section {
+    margin: 5em 0;
+    overflow: hidden;
+    text-align: center;
+}
+.welcome p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1em;
+}
+.box {
+    margin: 2em 0;
+}
+.box h3 {
+    margin: 1em 0;
+}
+.box p {
+    font-size: 0.9em;
+}
+.work ul li {
+    position: relative;
+}
+.work img {
+    width: 100%;
+    display: block;
+}
+.work a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #424eb0;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 10;
+}
+.work a:hover:before {
+    opacity: 0.8;
+}
+.work .info {
+    position: absolute;
+    top: 0;
+    left: 23px;
+    opacity: 0;
+    transition: all 0.2s;
+    z-index: 20;
+}
+.work a:hover .info {
+    transform: translateY(23px);
+    opacity: 1;
+}
+.work .info h3,
+.work .info span {
+    color: #fff;
+}
+.work .info span {
+    font-size: 0.8em;
+}
+.work .info img{
+    width: 100%;
+}
+.blog .line {
+    border-bottom: 2px solid #63677C;
+    width: 1em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+}
+.blog img {
+    width: 100%;
+}
+.blog ul li {
+    margin-bottom: 1em;
+}
+.blog h4 {
+    font-size: 0.7em;
+    color: #ccc;
+    text-align: left;
+    margin-top: 1em;
+}
+.blog h3 {
+    font-size: 0.9em;
+    text-align: left;
+}
+.reservation form {
+    position: relative;
+    padding: 4em 0;
+}
+.reservation p {
+    width: 100%;
+    text-align: left;
+}
+.reservation input {
+    width: 100%;
+    margin-bottom: 1em;
+}
+form input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.reservation .btn {
+    width: 12em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #5657AA;
+    color: #fff;
+    padding: 1em;
+}
+footer {
+    height: 3em;
+    line-height: 3em;
+}
+footer h2 {
+    text-align: center;
+    font-size: 0.9em;
+}
+@media all and (min-width: 768px) and (max-width: 1131px) {
+    .gnb_btn {
+        display: none;
+        cursor: pointer;
+    }
+    nav {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 1.5em;
+        background: none;
+    }
+    nav ul li {
+        float: left;
+        margin: 0.3em;
+        padding: 0;
+    }
+    nav ul li a {
+        color: #424eb0;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+    section {
+        text-align: left;
+    }
+    .box {
+        margin-top: 4em;
+        padding-bottom: 4em;
+        border-bottom: 1px solid #eee;
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+    .welcome h2 {
+        text-align: center;
+    }
+    .welcome p {
+        text-align: center;
+        width: 100%;
+    }
+    .box h3 {
+        font-size: 0.8em;
+        color: #63677c;
+    }
+    .box p {
+        font-size: 0.7em;
+    }
+    .work h2 {
+        margin-bottom: 2em;
+    }
+    .work ul li {
+        float: left;
+        width: 50%;
+        display: block;
+    }
+    .blog h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .blog ul li {
+        float: left;
+        width: 32%;
+        margin-right: 2%;
+        box-sizing: border-box;
+    }
+    .blog ul li:last-child {
+        margin-right: 0%;
+    }
+    .blog ul img {
+        width: 100%;
+    }
+    .blog h4 {
+        font-size: 0.6em;
+        color: #ccc;
+    }
+    .blog h3 {
+        font-size: 0.9em;
+    }
+    .reservation h2 {
+        text-align: center;
+    }
+    .reservation p {
+        width: 45%;
+        margin-left: 2%;
+    }
+    .reservation form p:nth-child(7) {
+        position: absolute;
+        top: 7em;
+        right: 0;
+        width: 50%;
+    }
+    .reservation input {
+        width: 45%;
+        margin-left: 2%;
+        margin-bottom: 1em;
+    }
+    .reservation textarea {
+        position: absolute;
+        top: 8.2em;
+        right: 0;
+        width: 50%;
+    }
+}
+@media all and (min-width: 1132px) {
+    .gnb_btn {
+        display: none;
+        cursor: pointer;
+    }
+    nav {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 1.5em;
+        background: none;
+    }
+    nav ul li {
+        float: left;
+        margin: 0 0.5em;
+        padding: 0;
+    }
+    nav ul li a {
+        color: #424eb0;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .wrap {
+        width: 960px;
+        margin: 0 auto;
+    }
+    section {
+        text-align: left;
+    }
+    .box {
+        margin-top: 4em;
+        padding-bottom: 4em;
+        border-bottom: 1px solid #eee;
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+    .welcome h2 {
+        float: left;
+        width: 29%;
+        border-right: 1px solid #eee;
+        box-sizing: border-box;
+        margin-right: 1%;
+    }
+    .welcome p {
+        float: left;
+        width: 70%;
+    }
+    .box h3 {
+        font-size: 0.8em;
+        color: #63677c;
+    }
+    .box p {
+        font-size: 0.7em;
+    }
+    .work h2 {
+        margin-bottom: 2em;
+    }
+    .work ul li {
+        float: left;
+        width: 25%;
+        display: block;
+    }
+    .blog h2 {
+        float: left;
+        width: 20%;
+    }
+    .blog ul li {
+        float: left;
+        width: 24%;
+        margin-right: 2%;
+        box-sizing: border-box;
+    }
+    .blog ul img {
+        width: 100%;
+    }
+    .blog h4 {
+        font-size: 0.6em;
+        color: #ccc;
+    }
+    .blog h3 {
+        font-size: 0.9em;
+    }
+    .reservation p {
+        width: 45%;
+        margin-left: 2%;
+    }
+    .reservation form p:nth-child(7) {
+        position: absolute;
+        top: 7em;
+        right: 0;
+        width: 50%;
+    }
+    .reservation input {
+        width: 45%;
+        margin-left: 2%;
+        margin-bottom: 1em;
+    }
+    .reservation textarea {
+        position: absolute;
+        top: 8.2em;
+        right: 0;
+        width: 50%;
+    }
+}

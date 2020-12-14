@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+body{
+	background-color: #4b4e43;
+}
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+#header{
+	background-color: #b1c9df;
+	overflow: hidden;
+}
+#header-inner{
+	background-image: url("img/header-bg.png");
+	height: 400px;
+	margin-top: 30px;
+	position: relative;
+}
+.logo{
+	background-image: url("img/logo.png");
+	width: 280px;
+	height: 50px;
+	text-indent: -9999px;
+	position: absolute;
+}
+#move{
+	background-image: url("img/movie-scroll.png");
+	height: 110px;
+}
+#contents-list{
+	width: 990px;
+	margin: 50px auto;
+}
+#contents-list>li{
+	background-color: #22231f;
+	width: 300px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	position: relative;
+	top: 30px;
+	transition: all 1s;
+	text-align: center;
+}
+#contents-list li h3{
+	color: #999;
+	font-size: 25px;
+	padding: 10px 0 10px 15px;
+	font-family: "맑은 고딕";
+	font-weight: normal;
+	text-align:left;
+}
+#contents-list li p{
+	color: #999;
+	padding: 10px;
+	text-align: left;
+}
+#contents-list>li:hover{
+	background-color: red;
+	top: 0;
+}
+.btn{
+	border-top: 1px solid #999;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.btn li{
+	float: left;
+}
+.btn li a{
+	background-image: url("img/sprite-btn.png");
+	display: block;
+	width: 50px;
+	height:50px;
+	text-indent: -9999px;
+}
+.btn a:hover{
+	background-color: #000;
+}
+.btn li.view a{
+	background-position: 0 0;
+}
+.btn li.like a{
+	background-position: 100px 0;
+}
+.btn li.share a{
+	background-position: 200px 0;
+}
+#footer-inner{
+	clear: both;
+	background-color: #22231f;
+	padding: 20px;
+	font-family: "맑은 고딕";
+}
